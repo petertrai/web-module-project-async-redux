@@ -1,7 +1,10 @@
 import React from "react";
-import data from "../data/gifsdata";
 import Gif from "./Gif";
-const GifList = () => {
+import { connect } from "react-redux";
+
+const GifList = (props) => {
+const { data } = props
+
   return (
     <div className="gif-card">
       {data.map((gif) => {
@@ -11,4 +14,10 @@ const GifList = () => {
   );
 };
 
-export default GifList;
+const mapStateToProps = state => {
+    return ({
+        data: state.data
+    })
+}
+
+export default connect(mapStateToProps, {})(GifList);

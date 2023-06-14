@@ -6,7 +6,6 @@ const SearchForm = () => {
     <>
       <form>
         <input type="text" />
-        <br />
         <button>Search</button>
       </form>
     </>
