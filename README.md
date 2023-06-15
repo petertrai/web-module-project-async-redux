@@ -1,1 +1,1 @@
-Search the internet for Gifs
+Search the internet for Gifs!
